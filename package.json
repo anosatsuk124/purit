@@ -1,13 +1,15 @@
 {
   "name": "purit",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "A git implementation in Purescript.",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "npx spago bundle-app --to ./index.js && node ./index.js"
+    "test": "npx spago bundle-app --to ./index.js && node ./index.js",
+    "build": "npx spago build-app --to ./index.js",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -18,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/anosatsuk124/purit/issues"
   },
-  "homepage": "https://github.com/anosatsuk124/purit#readme"
+  "homepage": "https://github.com/anosatsuk124/purit#readme",
+  "dependencies": {
+    "purescript": "^0.14.4",
+    "spago": "^0.20.3"
+  }
 }
