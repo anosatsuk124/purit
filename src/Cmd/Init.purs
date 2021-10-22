@@ -14,8 +14,8 @@ import Node.Encoding as NE
 init :: String -> Effect Unit
 init args = do 
       case ( args ) of
-         _ -> FS.mkdir args
          "." -> pure unit
+         _ -> FS.mkdir args
       if args == "." && unsafePerformEffect (FS.exists(gitdir))
         then log "The git repository already exists."
       else do
