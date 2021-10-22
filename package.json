@@ -1,0 +1,22 @@
+{
+  "name": "purit",
+  "version": "1.0.0",
+  "description": "A git implementation in Purescript.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anosatsuk124/purit.git"
+  },
+  "author": "Satsuki Akiba",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/anosatsuk124/purit/issues"
+  },
+  "homepage": "https://github.com/anosatsuk124/purit#readme"
+}
