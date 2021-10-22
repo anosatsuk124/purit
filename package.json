@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "npx spago bundle-app --to ./index.js && node ./index.js",
-    "build": "npx spago build-app --to ./index.js",
+    "build": "npx spago bundle-app --to ./index.js",
     "prepublish": "npm run build"
   },
   "repository": {
