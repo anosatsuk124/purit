@@ -19,7 +19,6 @@ to generate this file without the comments in this block.
   , "maybe"
   , "node-buffer"
   , "node-fs"
-  , "partial"
   , "prelude"
   , "psci-support"
   ]
