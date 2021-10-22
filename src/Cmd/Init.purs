@@ -20,8 +20,8 @@ init = do
       FS.mkdir $ gitdir <> "branches"
       FS.mkdir $ gitdir <> "objects"
       FS.mkdir $ gitdir <> "refs"
-      FS.mkdir $ gitdir <> "refs" <> "tags"
-      FS.mkdir $ gitdir <> "refs" <> "heads"
+      FS.mkdir $ gitdir <> "refs/" <> "tags"
+      FS.mkdir $ gitdir <> "refs/" <> "heads"
       FS.writeTextFile NE.UTF8 (gitdir <> "HEAD") "ref: refs/heads/master\n"
       FS.writeTextFile NE.UTF8 (gitdir <> "description") "Unnamed repository; edit this file 'description' to name the repository.\n"
       
