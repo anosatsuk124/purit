@@ -1,6 +1,6 @@
 {
   "name": "purit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A git implementation in Purescript.",
   "main": "index.js",
   "directories": {
@@ -10,6 +10,9 @@
     "test": "spago bundle-app --to ./index.js && node ./index.js",
     "build": "spago bundle-app --to ./index.js",
     "prepublish": "npm run build"
+  },
+  "bin": {
+    "purit": "index.js"
   },
   "repository": {
     "type": "git",
