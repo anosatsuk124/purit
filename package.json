@@ -7,8 +7,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "spago build && node ./index.js",
-    "build": "spago build",
+    "test": "spago bundle-app --to ./index.js && sed -i '1i#!/usr/bin/env node' ./index.js && node ./index.js",
+    "build": "spago bundle-app --to ./index.js && sed -i '1i#!/usr/bin/env node' ./index.js",
     "prepublish": "npm run build"
   },
   "bin": {
