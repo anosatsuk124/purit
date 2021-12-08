@@ -27,6 +27,6 @@ init args = do
         FS.mkdir $ args <> "/" <> gitdir <> "refs/" <> "heads"
         FS.writeTextFile NE.UTF8 (args <> "/" <> gitdir <> "HEAD") "ref: refs/heads/master\n"
         FS.writeTextFile NE.UTF8 (args <> "/" <> gitdir <> "description") "Unnamed repository; edit this file 'description' to name the repository.\n"
-        FS.writeTextFile NE.UTF8 (gitdir <> "config") "[core]\n\trepositoryformatversion = 0\n\tfilemode = true\n\tbare = false\n\tlogallrefupdates = true"
+        FS.writeTextFile NE.UTF8 (args <> "/" <> gitdir <> "config") "[core]\n\trepositoryformatversion = 0\n\tfilemode = true\n\tbare = false\n\tlogallrefupdates = true"
    where
       gitdir = ".git/"
