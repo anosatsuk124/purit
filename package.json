@@ -1,6 +1,6 @@
 {
   "name": "purit",
-  "version": "0.1.2",
+  "version": "0.1.2.1",
   "description": "A git implementation in Purescript.",
   "main": "index.js",
   "directories": {
