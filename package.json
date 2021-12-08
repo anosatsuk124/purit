@@ -7,8 +7,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "npx spago bundle-app --to ./index.js && node ./index.js",
-    "build": "npx spago bundle-app --to ./index.js",
+    "test": "spago bundle-app --to ./index.js && node ./index.js",
+    "build": "spago bundle-app --to ./index.js",
     "prepublish": "npm run build"
   },
   "repository": {
@@ -20,9 +20,5 @@
   "bugs": {
     "url": "https://github.com/anosatsuk124/purit/issues"
   },
-  "homepage": "https://github.com/anosatsuk124/purit#readme",
-  "dependencies": {
-    "purescript": "^0.14.4",
-    "spago": "^0.20.3"
-  }
+  "homepage": "https://github.com/anosatsuk124/purit#readme"
 }
