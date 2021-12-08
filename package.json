@@ -1,14 +1,14 @@
 {
   "name": "purit",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A git implementation in Purescript.",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "spago bundle-app --to ./index.js && node ./index.js",
-    "build": "spago bundle-app --to ./index.js",
+    "test": "spago build && node ./index.js",
+    "build": "spago build",
     "prepublish": "npm run build"
   },
   "bin": {
