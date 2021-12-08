@@ -10,3 +10,4 @@
 /.spago
 /git_test
 /package-lock.json
+/index.js
