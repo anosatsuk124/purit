@@ -2,17 +2,17 @@
   "name": "purit",
   "version": "0.1.4",
   "description": "A git implementation in Purescript.",
-  "main": "index.js",
+  "main": "purit",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "spago bundle-app --to ./index.js && sed -i '1i#!/usr/bin/env node' ./index.js && node ./index.js",
-    "build": "spago bundle-app --to ./index.js && sed -i '1i#!/usr/bin/env node' ./index.js",
+    "test": "spago bundle-app --to ./purit && sed -i '1i#!/usr/bin/env node' ./purit && node ./purit",
+    "build": "spago bundle-app --to ./purit && sed -i '1i#!/usr/bin/env node' ./purit",
     "prepublish": "npm run build"
   },
   "bin": {
-    "purit": "index.js"
+    "purit": "purit"
   },
   "repository": {
     "type": "git",
